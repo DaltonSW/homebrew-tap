@@ -1,4 +1,4 @@
-class aocli < Formula
+class Aocli < Formula
   desc "A fast and pretty CLI program for interfacing with Advent of Code puzzles."
   homepage "https://github.com/DaltonSW/aocgo/tree/main/cmd/aocli"
   if OS.linux?
@@ -12,7 +12,11 @@ class aocli < Formula
   license "GPL-3.0-or-later"
 
   def install
-    bin.install "aocli"
+    if OS.linux?
+      bin.install "aocli-linux-amd64" => "aocli"
+    elsif OS.mac?
+      bin.install "aocli-darwin-amd64" => "aocli"
+    end
   end
 
   test do
