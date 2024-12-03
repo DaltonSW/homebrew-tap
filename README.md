@@ -1,15 +1,15 @@
-# DaltonSW Packages
+# Dalton's Brew Tap 🍺
 
 ## How do I install these formulae?
 
-`brew install daltonsw/packages/<formula>`
+`brew install daltonsw/tap/<formula>`
 
-Or `brew tap daltonsw/packages` and then `brew install <formula>`.
+Or `brew tap daltonsw/tap` and then `brew install <formula>`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
-tap "daltonsw/packages"
+tap "daltonsw/tap"
 brew "<formula>"
 ```
 
