@@ -5,20 +5,20 @@
 class Stylish < Formula
   desc ""
   homepage "https://dalton.dog/stylish"
-  version "1.0.3"
+  version "1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DaltonSW/stylish/releases/download/v1.0.3/stylish_Darwin_x86_64.tar.gz"
-      sha256 "6867bc7600a600626a4cf9d02917bf844941429c82858afd73350ce04ead54db"
+      url "https://github.com/DaltonSW/stylish/releases/download/v1.1/stylish_Darwin_x86_64.tar.gz"
+      sha256 "20ab7816f7e16c904550aa6aeb5750a190639170be9a862f38d6d2a766d02140"
 
       def install
         bin.install "stylish"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DaltonSW/stylish/releases/download/v1.0.3/stylish_Darwin_arm64.tar.gz"
-      sha256 "2e8f51271ba62d05b1ab5f25d039ad290ed94df6f964ef420c1334775e1e6a4f"
+      url "https://github.com/DaltonSW/stylish/releases/download/v1.1/stylish_Darwin_arm64.tar.gz"
+      sha256 "8825539c25e40b5bc29997b294a53422f813a60708a918ed5c2a9436d7adeb2f"
 
       def install
         bin.install "stylish"
@@ -29,8 +29,8 @@ class Stylish < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/DaltonSW/stylish/releases/download/v1.0.3/stylish_Linux_x86_64.tar.gz"
-        sha256 "3ecbfa8ab361edc82972f0dd2f23c045fc421bd0dd0958e25f208b7702f49515"
+        url "https://github.com/DaltonSW/stylish/releases/download/v1.1/stylish_Linux_x86_64.tar.gz"
+        sha256 "670699ebe8a07b250aa71a7459ecc32402a2ded7a9fea48453aef5f27f3c5811"
 
         def install
           bin.install "stylish"
@@ -39,8 +39,8 @@ class Stylish < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/DaltonSW/stylish/releases/download/v1.0.3/stylish_Linux_arm64.tar.gz"
-        sha256 "6d2be97afbd89b385661922913d863d45037fad0904c53369691391ade90a75d"
+        url "https://github.com/DaltonSW/stylish/releases/download/v1.1/stylish_Linux_arm64.tar.gz"
+        sha256 "43fa175beed797fd4b04f8c98009d7323696094d29f4c79b075a7aa509ca00d2"
 
         def install
           bin.install "stylish"
