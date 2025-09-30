@@ -3,7 +3,7 @@ cask "prism" do
   name "prism"
   desc ""
   homepage "https://dalton.dog/prism"
-  version "1.0.2"
+  version "1.0.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "prism" do
   on_macos do
     on_intel do
       url "https://github.com/DaltonSW/prism/releases/download/v#{version}/prism_Darwin_x86_64.tar.gz"
-      sha256 "9af98c09985b27e687e789da7911c7c05752d053770609d6160e3043d3ef8642"
+      sha256 "9158d1689aced785d14a13ca3004a7816f411f618bfeec69f94317e16e58a470"
     end
     on_arm do
       url "https://github.com/DaltonSW/prism/releases/download/v#{version}/prism_Darwin_arm64.tar.gz"
-      sha256 "2693157fb72f27542abd92922151b32add52353a4e3457cd3aafbfc0cc94af99"
+      sha256 "8279fe4fd588132b6dae4ab0e7af539dae88ddcaf81ca6a2ef30da73aa1af5f1"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/DaltonSW/prism/releases/download/v#{version}/prism_Linux_x86_64.tar.gz"
-      sha256 "d678d67ce8ddecf8a12e74b18e22a253a0ead80542f20582e888fef831295dc0"
+      sha256 "ecf7e0c39130fb3f05c874c598be1afa62f7481cd5c0a6be7802dbdbcd250419"
     end
     on_arm do
       url "https://github.com/DaltonSW/prism/releases/download/v#{version}/prism_Linux_arm64.tar.gz"
-      sha256 "65f6ac057f17c5f9b2a6c5b4d968ada6f65ed4932de10ca7ac7a9bffef876928"
+      sha256 "364101d9c9e3d037dce3d9d61f8e2f996b4afa37861aa93360db6517a7adca6b"
     end
   end
 
